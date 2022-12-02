@@ -1,0 +1,14 @@
+DELIMITER 
+CREATE PROCEDURE lista()
+BEGIN
+   SELECT name FROM city ;
+END$
+
+
+************************
+
+DELIMITER $
+CREATE PROCEDURE buscar(IN nombre VARCHAR(1500))
+BEGIN
+   SELECT * FROM city WHERE Name=nombre;
+END$
