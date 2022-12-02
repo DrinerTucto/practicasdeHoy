@@ -3,12 +3,11 @@ Primero escriba y ejecuta=> USE world;
 ********************************************************
 luego ejecuta este comando:
 
-DELIMITER 
+DELIMITER $
 CREATE PROCEDURE lista()
 BEGIN
-   SELECT name FROM city ;
+   SELECT name FROM country;
 END$
-
 *****************************************
 Para usar el procedimiento escriba esto :
 
