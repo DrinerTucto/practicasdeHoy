@@ -1,7 +1,7 @@
 
 Primero escriba y ejecuta=> USE world;
 ********************************************************
-luego ejecuta esto:
+luego ejecuta este comando:
 
 DELIMITER 
 CREATE PROCEDURE lista()
@@ -9,14 +9,24 @@ BEGIN
    SELECT name FROM city ;
 END$
 
+*****************************************
+Para usar el procedimiento escriba esto :
+
+CALL lista();
 
 ******************************************************
 Primero escriba y ejecuta=> USE world;
 
-LUEGO ESTO :
+LUEGO ejecuta este comando:
 
 DELIMITER $
 CREATE PROCEDURE buscar(IN nombre VARCHAR(1500))
 BEGIN
    SELECT * FROM city WHERE Name=nombre;
 END$
+
+
+*******************************************
+Para usar el procedimiento escriba esto :
+
+CALL buscar('nombre del parametro');
