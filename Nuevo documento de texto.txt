@@ -1,3 +1,8 @@
+
+Primero escriba y ejecuta=> USE world;
+********************************************************
+luego ejecuta esto:
+
 DELIMITER 
 CREATE PROCEDURE lista()
 BEGIN
@@ -5,7 +10,10 @@ BEGIN
 END$
 
 
-************************
+******************************************************
+Primero escriba y ejecuta=> USE world;
+
+LUEGO ESTO :
 
 DELIMITER $
 CREATE PROCEDURE buscar(IN nombre VARCHAR(1500))
